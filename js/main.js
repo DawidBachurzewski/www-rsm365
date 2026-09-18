@@ -21,7 +21,7 @@ document.querySelectorAll(".main-nav a").forEach((link) => {
 
 /* ---------- scroll reveal ---------- */
 const revealTargets = document.querySelectorAll(
-  ".card, .pillar, .process-step, .diff-card, .industries-list li"
+  ".card, .pillar, .process-step, .diff-card, .industries-list li, .team-card, .history-card"
 );
 revealTargets.forEach((el) => el.classList.add("reveal"));
 
