@@ -4,36 +4,41 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>RSM365 — Zarządzana infrastruktura IT w chmurze i bezpieczeństwo Microsoft 365</title>
-<meta name="description" content="RSM365 zarządza infrastrukturą IT Twojej firmy w chmurze — Microsoft 365, Azure, cyberbezpieczeństwo, automatyzacja i AI. Bez komplikacji, bez ryzyka, bez przestojów.">
+<meta name="description" content="RSM365 przejmuje odpowiedzialność za IT Twojej firmy: Microsoft 365, Azure, cyberbezpieczeństwo, automatyzacja i AI. Monitoring 24/7, bez komplikacji i bez przestojów.">
+<meta name="theme-color" content="#2c1065">
+<meta property="og:title" content="RSM365 — IT w chmurze, bez przestojów">
+<meta property="og:description" content="Zarządzana infrastruktura IT, bezpieczeństwo Microsoft 365, automatyzacja i AI dla firm.">
+<meta property="og:type" content="website">
 <link rel="icon" href="img/favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <a class="skip-link" href="#main">Przejdź do treści</a>
+<div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
 
 <!-- ===== HEADER ===== -->
 <header class="site-header" id="top">
   <div class="container header-inner">
-    <a href="#top" class="logo">
-      <img src="img/logo.png" alt="RSM365" class="logo-img">
+    <a href="#top" class="logo" aria-label="RSM365 — strona główna">
+      <img src="img/logo-horizontal.png" alt="RSM365" class="logo-img" width="144" height="48">
     </a>
 
-    <nav class="main-nav" id="mainNav">
+    <nav class="main-nav" id="mainNav" aria-label="Główna nawigacja">
       <a href="#oferta">Oferta</a>
       <a href="#bezpieczenstwo">Bezpieczeństwo M365</a>
       <a href="#jak-dzialamy">Jak działamy</a>
       <a href="#dlaczego-my">Dlaczego my</a>
-      <a href="#branze">Branże</a>
-      <a href="#kontakt">Kontakt</a>
+      <a href="#o-nas">O nas</a>
+      <a href="#kontakt" class="main-nav__cta">Umów rozmowę</a>
     </nav>
 
     <div class="header-cta">
       <a href="#kontakt" class="btn btn--dark btn--sm">Umów rozmowę</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Otwórz menu" aria-expanded="false">
+      <button class="nav-toggle" id="navToggle" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mainNav">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -44,76 +49,122 @@
 
   <!-- ===== HERO ===== -->
   <section class="hero">
-    <div class="hero-blob hero-blob--1" aria-hidden="true"></div>
-    <div class="hero-blob hero-blob--2" aria-hidden="true"></div>
-    <canvas id="heroCanvas" class="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-blob hero-blob--1"></div>
+      <div class="hero-blob hero-blob--2"></div>
+      <div class="hero-grid"></div>
+    </div>
 
     <div class="container hero-inner">
-      <div class="hero-copy animate-in">
-        <p class="eyebrow">Zarządzane usługi IT &amp; Microsoft 365</p>
-        <h1>Twoja infrastruktura IT.<br>W chmurze. <span class="text-gradient">Bez przestojów.</span></h1>
-        <p class="hero-lead">
-          RSM365 zarządza całą infrastrukturą IT Twojej firmy w oparciu o rozwiązania chmurowe —
-          bezpiecznie, kompleksowo i w tempie, w jakim rozwija się Twój biznes. Zaczynaliśmy od
-          bezpieczeństwa Microsoft 365 — dziś projektujemy, wdrażamy i utrzymujemy całe środowisko IT.
+      <div class="hero-copy">
+        <p class="eyebrow hero-anim" style="--d:0">Zarządzane IT · Microsoft 365 · Chmura · AI</p>
+        <h1 class="hero-anim" style="--d:1">Twoja infrastruktura IT.<br>W chmurze. <span class="text-gradient">Bez&nbsp;przestojów.</span></h1>
+        <p class="hero-lead hero-anim" style="--d:2">
+          Przejmujemy odpowiedzialność za IT Twojej firmy — od bezpieczeństwa Microsoft 365, przez
+          chmurę, po automatyzację i AI. Ty rozwijasz biznes, my dbamy o to, żeby technologia
+          nadążała.
         </p>
-        <div class="hero-actions">
-          <a href="#kontakt" class="btn btn--primary btn--lg">Umów bezpłatną rozmowę</a>
+        <div class="hero-actions hero-anim" style="--d:3">
+          <a href="#kontakt" class="btn btn--primary btn--lg">
+            Umów bezpłatną rozmowę
+            <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
           <a href="#oferta" class="btn btn--ghost btn--lg">Zobacz ofertę</a>
         </div>
 
-        <dl class="hero-stats">
+        <dl class="hero-stats hero-anim" style="--d:4">
           <div>
             <dt>24/7</dt>
             <dd>Monitoring i wsparcie krytyczne</dd>
           </div>
           <div>
-            <dt>&lt;15 min</dt>
+            <dt>&lt;<span data-count="15">15</span>&nbsp;min</dt>
             <dd>Reakcja na zgłoszenia priorytetowe*</dd>
           </div>
           <div>
-            <dt>100%</dt>
+            <dt><span data-count="100">100</span>%</dt>
             <dd>Rozwiązania oparte na chmurze</dd>
           </div>
         </dl>
-        <p class="hero-note">* Docelowy czas reakcji definiowany indywidualnie w umowie SLA.</p>
+        <p class="hero-note hero-anim" style="--d:5">* Docelowy czas reakcji ustalany indywidualnie w umowie SLA.</p>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="orb-glow"></div>
+        <div class="orb-fallback"></div>
+        <canvas id="heroCanvas" class="hero-canvas"></canvas>
+        <div class="orb-chip orb-chip--1"><span class="dot dot--teal"></span>Monitoring aktywny</div>
+        <div class="orb-chip orb-chip--2"><span class="dot dot--violet"></span>MFA · Zero Trust</div>
+        <div class="orb-chip orb-chip--3"><span class="dot dot--coral"></span>Backup: OK</div>
       </div>
     </div>
+
+    <a href="#technologie" class="scroll-cue" aria-label="Przewiń w dół"><span></span></a>
   </section>
 
-  <!-- ===== LOGOS / TRUST STRIP ===== -->
-  <section class="trust-strip">
-    <div class="container trust-strip__inner">
-      <p>Zaufali nam specjaliści z branż:</p>
-      <ul>
-        <li>Produkcja i przemysł</li>
-        <li>Handel i e-commerce</li>
-        <li>Usługi profesjonalne</li>
-        <li>Finanse i księgowość</li>
-        <li>Logistyka i transport</li>
-        <li>Sektor publiczny</li>
+  <!-- ===== TECH MARQUEE ===== -->
+  <section class="tech-strip" id="technologie" aria-label="Technologie, z którymi pracujemy">
+    <p class="tech-strip__label">Pracujemy na technologiach, którym ufają firmy na całym świecie</p>
+    <div class="marquee">
+      <ul class="marquee__track">
+        <li>Microsoft 365</li><li>Azure</li><li>Entra ID</li><li>Intune</li><li>Defender XDR</li>
+        <li>Microsoft Sentinel</li><li>Copilot</li><li>Exchange Online</li><li>Teams</li>
+        <li>SharePoint</li><li>OneDrive</li><li>Power Automate</li>
+      </ul>
+      <ul class="marquee__track" aria-hidden="true">
+        <li>Microsoft 365</li><li>Azure</li><li>Entra ID</li><li>Intune</li><li>Defender XDR</li>
+        <li>Microsoft Sentinel</li><li>Copilot</li><li>Exchange Online</li><li>Teams</li>
+        <li>SharePoint</li><li>OneDrive</li><li>Power Automate</li>
       </ul>
     </div>
   </section>
 
+  <!-- ===== BRZMI ZNAJOMO ===== -->
+  <section class="section section--pain">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow eyebrow--center">Brzmi znajomo?</p>
+        <h2>IT powinno pomagać firmie rosnąć, a nie ją spowalniać</h2>
+      </div>
+      <div class="pain-grid">
+        <article class="pain-card tilt">
+          <p class="pain-quote">„Znowu nie działa…”</p>
+          <p>Awarie, powolne systemy i gaszenie pożarów zjadają czas całego zespołu.</p>
+          <p class="pain-answer"><span>Nasza odpowiedź:</span> monitoring 24/7 i reakcja, zanim drobny problem zamieni się w przestój.</p>
+        </article>
+        <article class="pain-card tilt">
+          <p class="pain-quote">„Czy na pewno jesteśmy bezpieczni?”</p>
+          <p>Phishing, ransomware i NIS2 — trudno ocenić, czy konfiguracja Microsoft 365 jest szczelna.</p>
+          <p class="pain-answer"><span>Nasza odpowiedź:</span> audyt, wdrożenie zabezpieczeń i regularne testy odporności.</p>
+        </article>
+        <article class="pain-card tilt">
+          <p class="pain-quote">„Płacimy za licencje, których nikt nie używa”</p>
+          <p>Koszty chmury i subskrypcji rosną z miesiąca na miesiąc, a nikt nad nimi nie panuje.</p>
+          <p class="pain-answer"><span>Nasza odpowiedź:</span> przegląd licencji i zasobów oraz stała kontrola wydatków IT.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== OFERTA ===== -->
-  <section class="section" id="oferta">
+  <section class="section section--tint" id="oferta">
     <div class="container">
       <div class="section-head">
         <p class="eyebrow eyebrow--center">Nasza oferta</p>
-        <h2>Kompleksowa opieka nad Twoim środowiskiem IT</h2>
+        <h2>Jeden partner do całego IT — od skrzynki pocztowej po&nbsp;AI</h2>
         <p class="section-lead">
-          Nie sprzedajemy gotowych pakietów. Każde wdrożenie zaczynamy od analizy Twojego biznesu —
-          poniżej pełen zakres usług, którymi możemy objąć Twoją firmę.
+          Nie sprzedajemy gotowych pakietów. Zaczynamy od tego, czego Twoja firma potrzebuje dziś,
+          i dokładamy kolejne elementy, gdy biznes rośnie.
         </p>
       </div>
 
-      <div class="grid services-grid">
+      <div class="services-grid">
 
-        <article class="card service-card">
+        <article class="card service-card service-card--feature tilt">
           <div class="service-icon service-icon--violet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 19a4.5 4.5 0 0 1-.5-8.98A5.5 5.5 0 0 1 16.9 8.02 4 4 0 0 1 17 16"/><path d="M6.5 19h10.5"/></svg></div>
+          <span class="card-tag">Najczęściej wybierane</span>
           <h3>Zarządzana infrastruktura IT w chmurze</h3>
-          <p>Przejmujemy pełną odpowiedzialność za środowisko IT — serwery, sieci, systemy i aplikacje — utrzymywane w chmurze publicznej, prywatnej lub hybrydowej.</p>
+          <p>Przejmujemy pełną odpowiedzialność za środowisko IT — serwery, sieci, systemy i aplikacje w chmurze publicznej, prywatnej lub hybrydowej. Jeden kontakt, jedna odpowiedzialność.</p>
           <ul>
             <li>Monitoring 24/7 i proaktywne zarządzanie incydentami</li>
             <li>Zarządzanie serwerami, sieciami i systemami w chmurze</li>
@@ -121,65 +172,66 @@
           </ul>
         </article>
 
-        <article class="card service-card">
+        <article class="card service-card tilt">
           <div class="service-icon service-icon--teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="11" rx="1.5"/><path d="M2.5 19.5h19"/><path d="M9.5 16v1.5M14.5 16v1.5"/></svg></div>
           <h3>Microsoft 365 i Azure</h3>
-          <p>Projektujemy, wdrażamy i utrzymujemy środowiska oparte o Microsoft 365 i Azure — pocztę, pracę zespołową, tożsamość i zgodność.</p>
+          <p>Projektujemy, wdrażamy i utrzymujemy środowiska Microsoft 365 i Azure — pocztę, pracę zespołową, tożsamość i zgodność.</p>
           <ul>
             <li>Migracja i konfiguracja (Exchange, Teams, SharePoint)</li>
-            <li>Zarządzanie tożsamością i dostępem (Entra ID / Intune)</li>
-            <li>Optymalizacja licencji i kosztów subskrypcji</li>
+            <li>Tożsamość i dostęp (Entra ID / Intune)</li>
+            <li>Optymalizacja licencji i subskrypcji</li>
           </ul>
         </article>
 
-        <article class="card service-card">
+        <article class="card service-card tilt">
           <div class="service-icon service-icon--blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v6c0 1.66 3.13 3 7 3s7-1.34 7-3V6"/><path d="M5 12v6c0 1.66 3.13 3 7 3s7-1.34 7-3v-6"/></svg></div>
           <h3>Migracja i modernizacja do chmury</h3>
-          <p>Planujemy i realizujemy migrację środowisk lokalnych do chmury — bez zakłóceń w codziennej pracy firmy.</p>
+          <p>Przenosimy środowiska lokalne do chmury tak, żeby zespół nie odczuł przerwy w pracy.</p>
           <ul>
-            <li>Audyt obecnej infrastruktury i plan migracji</li>
+            <li>Audyt infrastruktury i plan migracji</li>
             <li>Migracja serwerów, baz danych i aplikacji</li>
             <li>Testy, walidacja i wsparcie powdrożeniowe</li>
           </ul>
         </article>
 
-        <article class="card service-card">
+        <article class="card service-card tilt">
           <div class="service-icon service-icon--violet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5 5 6v6c0 4.4 3 7.8 7 8.5 4-.7 7-4.1 7-8.5V6l-7-2.5Z"/><path d="m9.2 12.2 1.8 1.8 3.8-3.8"/></svg></div>
           <h3>Cyberbezpieczeństwo i zgodność</h3>
-          <p>Wdrażamy wielowarstwowe zabezpieczenia — od ochrony poczty i urządzeń, po zgodność z NIS2 i RODO.</p>
+          <p>Wielowarstwowa ochrona — od poczty i urządzeń po zgodność z NIS2 i RODO.</p>
           <ul>
             <li>Ochrona endpointów, poczty i tożsamości</li>
-            <li>Zarządzanie podatnościami i testy bezpieczeństwa</li>
+            <li>Zarządzanie podatnościami i testy</li>
             <li>Wsparcie w zgodności z RODO i NIS2</li>
           </ul>
         </article>
 
-        <article class="card service-card card--highlight">
-          <div class="service-icon service-icon--coral"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v3M12 17v3M4 12h3M17 12h3"/><path d="m9 9 6 6M15 9l-6 6"/><circle cx="12" cy="12" r="2.4"/></svg></div>
-          <h3>Automatyzacja procesów i rozwiązania AI</h3>
-          <p>Automatyzujemy powtarzalne procesy i wdrażamy narzędzia AI wspierające zespoły biznesowe i IT.</p>
-          <ul>
-            <li>Automatyzacja procesów IT i biznesowych (RPA, workflow)</li>
-            <li>Wdrożenia AI: asystenci, analiza danych, Copilot</li>
-            <li>Integracje między systemami i aplikacjami SaaS</li>
-          </ul>
-        </article>
-
-        <article class="card service-card">
+        <article class="card service-card tilt">
           <div class="service-icon service-icon--teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13v-1a8 8 0 0 1 16 0v1"/><rect x="3" y="13" width="4" height="6" rx="1.3"/><rect x="17" y="13" width="4" height="6" rx="1.3"/><path d="M20 19.5a3.5 3.5 0 0 1-3.5 3.5H13"/></svg></div>
           <h3>Wsparcie techniczne i helpdesk</h3>
-          <p>Zespół helpdesku wspiera pracowników Twojej firmy w codziennych sprawach IT, z jasnym SLA.</p>
+          <p>Pracownicy dostają szybką pomoc w codziennych sprawach IT — z jasnym SLA.</p>
           <ul>
-            <li>Wsparcie zdalne i on-site dla pracowników</li>
+            <li>Wsparcie zdalne i on-site</li>
             <li>Zgłoszenia telefonicznie, mailowo i przez portal</li>
             <li>Raportowanie i przegląd SLA</li>
           </ul>
         </article>
 
-        <article class="card service-card">
+        <article class="card service-card service-card--feature card--highlight tilt">
+          <div class="service-icon service-icon--coral"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v3M12 17v3M4 12h3M17 12h3"/><path d="m9 9 6 6M15 9l-6 6"/><circle cx="12" cy="12" r="2.4"/></svg></div>
+          <span class="card-tag card-tag--coral">Nowość</span>
+          <h3>Automatyzacja procesów i rozwiązania AI</h3>
+          <p>Powtarzalne zadania robią się same, a zespół zajmuje się tym, co przynosi firmie pieniądze. Wdrażamy automatyzację i AI tam, gdzie realnie oszczędzają czas.</p>
+          <ul>
+            <li>Automatyzacja procesów IT i biznesowych (RPA, workflow)</li>
+            <li>Wdrożenia AI: asystenci, analiza danych, Microsoft Copilot</li>
+            <li>Integracje między systemami i aplikacjami SaaS</li>
+          </ul>
+        </article>
+
+        <article class="card service-card tilt">
           <div class="service-icon service-icon--blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 17a7.5 7.5 0 1 1 15 0"/><path d="M12 13.2 15 9"/><path d="M12 17h.01"/></svg></div>
           <h3>Backup i ciągłość działania</h3>
-          <p>Projektujemy strategie backupu i disaster recovery — na wypadek awarii, ataku ransomware czy błędu ludzkiego.</p>
+          <p>Awaria, ransomware czy pomyłka pracownika — dane da się odzyskać, a firma działa dalej.</p>
           <ul>
             <li>Automatyczne kopie zapasowe w chmurze</li>
             <li>Plany disaster recovery i testy odtwarzania</li>
@@ -187,10 +239,10 @@
           </ul>
         </article>
 
-        <article class="card service-card">
+        <article class="card service-card tilt">
           <div class="service-icon service-icon--violet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="m14.8 9.2-1.6 4.4-4.4 1.6 1.6-4.4 4.4-1.6Z"/></svg></div>
           <h3>Optymalizacja kosztów IT (FinOps)</h3>
-          <p>Analizujemy wykorzystanie zasobów chmurowych i licencji, eliminując zbędne koszty bez utraty wydajności.</p>
+          <p>Płacisz tylko za to, czego firma naprawdę używa — bez utraty wydajności.</p>
           <ul>
             <li>Audyt kosztów chmury i licencji</li>
             <li>Rekomendacje optymalizacji zasobów</li>
@@ -198,74 +250,86 @@
           </ul>
         </article>
 
-        <article class="card service-card">
+        <article class="card service-card tilt">
           <div class="service-icon service-icon--teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="12" cy="12" r="0.6" fill="currentColor"/></svg></div>
           <h3>Doradztwo IT i strategia cyfrowa</h3>
-          <p>Pomagamy zaplanować rozwój IT tak, aby nadążał za wzrostem firmy — od strategii po dobór technologii.</p>
+          <p>Planujemy rozwój IT tak, żeby nadążał za wzrostem firmy — od strategii po dobór technologii.</p>
           <ul>
-            <li>Audyt i strategia IT dopasowana do planów rozwoju</li>
-            <li>Doradztwo przy wyborze technologii i dostawców</li>
-            <li>Wsparcie w budżetowaniu inwestycji IT</li>
+            <li>Strategia IT dopasowana do planów rozwoju</li>
+            <li>Wybór technologii i dostawców</li>
+            <li>Budżetowanie inwestycji IT</li>
           </ul>
         </article>
 
-        <article class="card service-card">
+        <article class="card service-card tilt">
           <div class="service-icon service-icon--blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="19" cy="18" r="2"/><path d="M6.6 7.2 10.4 11M17.4 7.2 13.6 11M6.6 16.8 10.4 13M17.4 16.8 13.6 13"/></svg></div>
           <h3>Sieci i infrastruktura hybrydowa</h3>
-          <p>Zapewniamy stabilną, bezpieczną łączność między biurami, chmurą i pracownikami zdalnymi.</p>
+          <p>Stabilne i bezpieczne połączenie między biurami, chmurą i pracownikami zdalnymi.</p>
           <ul>
-            <li>Projektowanie sieci LAN/WAN i łączności VPN</li>
+            <li>Sieci LAN/WAN i łączność VPN</li>
             <li>Środowiska hybrydowe (on-premise + chmura)</li>
             <li>Zarządzanie urządzeniami sieciowymi</li>
           </ul>
         </article>
 
       </div>
+
+      <div class="cta-band">
+        <div class="cta-band__inner">
+          <div class="cta-band__shape" aria-hidden="true"></div>
+          <div class="cta-band__copy">
+            <h2>Nie wiesz, od czego zacząć?</h2>
+            <p>Porozmawiajmy. W jednej krótkiej rozmowie wskażemy, co w Twoim IT warto poprawić najpierw — bez zobowiązań i bez technicznego żargonu.</p>
+          </div>
+          <a href="#kontakt" class="btn btn--light btn--lg">Wybierz termin rozmowy</a>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- ===== BEZPIECZEŃSTWO M365 (dziedzictwo) ===== -->
-  <section class="section section--dark" id="bezpieczenstwo">
+  <!-- ===== BEZPIECZEŃSTWO M365 ===== -->
+  <section class="section section--dark section--security" id="bezpieczenstwo">
+    <div class="security-floor" aria-hidden="true"></div>
     <div class="container">
       <div class="section-head section-head--light">
         <p class="eyebrow eyebrow--center eyebrow--on-dark">Nasze DNA</p>
         <h2>Zaczęliśmy od bezpieczeństwa Microsoft 365 — i wciąż robimy to najlepiej</h2>
         <p class="section-lead section-lead--on-dark">
-          Zadbaj o pełne bezpieczeństwo Microsoft 365. Bez komplikacji, bez ryzyka. Sześć filarów, na
-          których od lat budujemy zaufanie klientów.
+          Pełne bezpieczeństwo Microsoft 365. Bez komplikacji, bez ryzyka. Sześć filarów, na których
+          budujemy zaufanie klientów.
         </p>
       </div>
 
-      <div class="grid pillars-grid">
-        <div class="pillar">
-          <div class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v6c0 1.66 3.13 3 7 3s7-1.34 7-3V6"/><path d="M5 12v6c0 1.66 3.13 3 7 3s7-1.34 7-3v-6"/></svg></div>
+      <div class="pillars-grid">
+        <div class="pillar tilt">
+          <div class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11V7a3 3 0 0 1 6 0v4"/><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M12 15v2"/></svg></div>
           <h3>Audyt i konfiguracja bezpieczeństwa</h3>
-          <p>Ocena bieżącej konfiguracji O365 pod kątem najlepszych praktyk (NIST, ISO-27001), Exchange Online Protection, Defender for Office 365.</p>
+          <p>Ocena konfiguracji M365 według najlepszych praktyk (NIST, ISO 27001), Exchange Online Protection, Defender for Office 365.</p>
         </div>
-        <div class="pillar">
-          <div class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13v-1a8 8 0 0 1 16 0v1"/><rect x="3" y="13" width="4" height="6" rx="1.3"/><rect x="17" y="13" width="4" height="6" rx="1.3"/><path d="M20 19.5a3.5 3.5 0 0 1-3.5 3.5H13"/></svg></div>
+        <div class="pillar tilt">
+          <div class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="3" width="10" height="18" rx="2"/><path d="M11 17.5h2"/><path d="m10 10 1.5 1.5L14.5 8.5"/></svg></div>
           <h3>Polityki i MFA</h3>
-          <p>Wdrażanie i utrzymanie logiki Zero Trust i MFA, definicja polityk dostępu, retencji, DLP i klasyfikacji w SharePoint/OneDrive.</p>
+          <p>Zero Trust i MFA, polityki dostępu, retencji, DLP i klasyfikacji danych w SharePoint i OneDrive.</p>
         </div>
-        <div class="pillar">
-          <div class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 17a7.5 7.5 0 1 1 15 0"/><path d="M12 13.2 15 9"/><path d="M12 17h.01"/></svg></div>
+        <div class="pillar tilt">
+          <div class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 4v5h-5"/></svg></div>
           <h3>Automatyzacja i skanowanie</h3>
-          <p>Automatyczne ustawienia zabezpieczeń i raportowanie, regularne skanowanie konfiguracji i alerty o odchyleniach.</p>
+          <p>Automatyczne ustawienia zabezpieczeń, raportowanie, regularne skanowanie i alerty o odchyleniach.</p>
         </div>
-        <div class="pillar">
-          <div class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 3v2.5M12 18.5V21M21 12h-2.5M5.5 12H3M18 6l-1.8 1.8M7.8 16.2 6 18M18 18l-1.8-1.8M7.8 7.8 6 6"/></svg></div>
+        <div class="pillar tilt">
+          <div class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-7 4 14 3-7h4"/></svg></div>
           <h3>Monitorowanie i reagowanie</h3>
-          <p>Integracja z Defender XDR, Sentinel i Copilot dla szybkiej identyfikacji i reakcji — alerty konfiguracji, logi, raporty.</p>
+          <p>Defender XDR, Sentinel i Copilot for Security — szybka identyfikacja zagrożeń, alerty, logi i raporty.</p>
         </div>
-        <div class="pillar">
+        <div class="pillar tilt">
           <div class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5 5 6v6c0 4.4 3 7.8 7 8.5 4-.7 7-4.1 7-8.5V6l-7-2.5Z"/><path d="m9.2 12.2 1.8 1.8 3.8-3.8"/></svg></div>
           <h3>Zapewnienie bezpieczeństwa</h3>
-          <p>Konfiguracja narzędzi: szyfrowanie poczty, blokowanie forwardingu, szkolenia z M365 w odniesieniu do bezpieczeństwa.</p>
+          <p>Szyfrowanie poczty, blokowanie przekierowań, szkolenia z bezpiecznej pracy w M365.</p>
         </div>
-        <div class="pillar">
+        <div class="pillar tilt">
           <div class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="0.8" fill="currentColor"/><path d="M12 3.5V6M12 18v2.5M20.5 12H18M6 12H3.5"/></svg></div>
           <h3>Testy i symulacje ataków</h3>
-          <p>Symulacje phishingowe, testy socjotechniczne, szkolenia pracowników w środowisku M365.</p>
+          <p>Symulacje phishingu, testy socjotechniczne i szkolenia pracowników w środowisku M365.</p>
         </div>
       </div>
     </div>
@@ -276,35 +340,36 @@
     <div class="container">
       <div class="section-head">
         <p class="eyebrow eyebrow--center">Proces współpracy</p>
-        <h2>Jak działamy</h2>
+        <h2>Od pierwszej rozmowy do spokojnej głowy — w&nbsp;4&nbsp;krokach</h2>
       </div>
 
-      <div class="process-grid">
-        <div class="process-step">
+      <ol class="process" id="process">
+        <li class="process-line" aria-hidden="true"><span id="processFill"></span></li>
+        <li class="process-step">
           <span class="process-num">01</span>
           <h3>Audyt i rozmowa o celach</h3>
-          <p>Poznajemy Twoją firmę, obecną infrastrukturę i cele biznesowe, żeby zaproponować rozwiązanie dopasowane do realnych potrzeb, a nie gotowy szablon.</p>
-        </div>
-        <div class="process-step">
+          <p>Poznajemy firmę, infrastrukturę i cele biznesowe. Proponujemy rozwiązanie pod realne potrzeby, a nie gotowy szablon.</p>
+        </li>
+        <li class="process-step">
           <span class="process-num">02</span>
-          <h3>Plan i architektura rozwiązania</h3>
-          <p>Przygotowujemy plan wdrożenia, harmonogram i architekturę środowiska — z jasno określonym zakresem, kosztem i poziomem SLA.</p>
-        </div>
-        <div class="process-step">
+          <h3>Plan i architektura</h3>
+          <p>Przygotowujemy plan wdrożenia, harmonogram i architekturę — z jasnym zakresem, kosztem i SLA.</p>
+        </li>
+        <li class="process-step">
           <span class="process-num">03</span>
           <h3>Wdrożenie bez przestojów</h3>
-          <p>Realizujemy migrację lub wdrożenie w sposób minimalizujący wpływ na bieżącą pracę zespołu, z pełną komunikacją na każdym etapie.</p>
-        </div>
-        <div class="process-step">
+          <p>Wdrażamy tak, żeby zespół mógł normalnie pracować, i informujemy o postępach na każdym etapie.</p>
+        </li>
+        <li class="process-step">
           <span class="process-num">04</span>
           <h3>Stałe wsparcie i rozwój</h3>
-          <p>Monitorujemy środowisko 24/7, reagujemy na zgłoszenia i regularnie doradzamy, jak rozwijać infrastrukturę wraz ze wzrostem firmy.</p>
-        </div>
-      </div>
+          <p>Monitorujemy 24/7, reagujemy na zgłoszenia i doradzamy, jak rozwijać IT razem z firmą.</p>
+        </li>
+      </ol>
     </div>
   </section>
 
-  <!-- ===== DLACZEGO MY ===== -->
+  <!-- ===== DLACZEGO MY + BRANŻE ===== -->
   <section class="section section--tint" id="dlaczego-my">
     <div class="container">
       <div class="section-head">
@@ -312,46 +377,40 @@
         <h2>Technologia, która nadąża za rozwojem Twojej firmy</h2>
       </div>
 
-      <div class="grid diff-grid">
-        <div class="diff-card">
+      <div class="diff-grid">
+        <div class="diff-card tilt">
           <div class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="m14.8 9.2-1.6 4.4-4.4 1.6 1.6-4.4 4.4-1.6Z"/></svg></div>
-          <h3>Rozwiązania dopasowane do klienta</h3>
-          <p>Nie sprzedajemy gotowych pakietów. Każde wdrożenie zaczynamy od analizy Twojego biznesu i budujemy architekturę IT dopasowaną do skali, budżetu i planów rozwoju.</p>
+          <h3>Szyte na miarę</h3>
+          <p>Zaczynamy od analizy Twojego biznesu i budujemy IT dopasowane do skali, budżetu i planów rozwoju.</p>
         </div>
-        <div class="diff-card">
-          <div class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 17a7.5 7.5 0 1 1 15 0"/><path d="M12 13.2 15 9"/><path d="M12 17h.01"/></svg></div>
-          <h3>Wsparcie w rozwoju firmy</h3>
-          <p>Infrastruktura IT rośnie razem z Twoją firmą. Planujemy skalowanie zasobów, zespołu i procesów tak, by technologia nigdy nie hamowała rozwoju biznesu.</p>
+        <div class="diff-card tilt">
+          <div class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></div>
+          <h3>Rośniemy razem z Tobą</h3>
+          <p>Planujemy skalowanie zasobów i procesów tak, żeby technologia nigdy nie hamowała rozwoju firmy.</p>
         </div>
-        <div class="diff-card">
+        <div class="diff-card tilt">
           <div class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v3M12 17v3M4 12h3M17 12h3"/><path d="m9 9 6 6M15 9l-6 6"/><circle cx="12" cy="12" r="2.4"/></svg></div>
-          <h3>Automatyzacja i AI w praktyce</h3>
-          <p>Wdrażamy automatyzację i rozwiązania AI tam, gdzie realnie oszczędzają czas i pieniądze — od automatyzacji procesów IT po asystentów wspierających zespoły.</p>
+          <h3>AI i automatyzacja w praktyce</h3>
+          <p>Wdrażamy je tam, gdzie realnie oszczędzają czas i pieniądze, a nie dlatego, że są modne.</p>
         </div>
-        <div class="diff-card">
+        <div class="diff-card tilt">
           <div class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5 5 6v6c0 4.4 3 7.8 7 8.5 4-.7 7-4.1 7-8.5V6l-7-2.5Z"/><path d="m9.2 12.2 1.8 1.8 3.8-3.8"/></svg></div>
-          <h3>Bezpieczeństwo jako standard</h3>
-          <p>Każde wdrożenie uwzględnia bezpieczeństwo danych i zgodność z regulacjami od samego początku, a nie jako dodatek na końcu projektu.</p>
+          <h3>Bezpieczeństwo w standardzie</h3>
+          <p>Bezpieczeństwo i zgodność z regulacjami uwzględniamy od pierwszego dnia, a nie jako dodatek na końcu.</p>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- ===== BRANŻE ===== -->
-  <section class="section" id="branze">
-    <div class="container">
-      <div class="section-head">
-        <p class="eyebrow eyebrow--center">Branże</p>
-        <h2>Wspieramy firmy niezależnie od branży</h2>
+      <div class="industries" id="branze">
+        <p class="industries__label">Wspieramy firmy z różnych branż</p>
+        <ul class="industries-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21V10l6 4V10l6 4V6l6 4v11H3Z"/></svg>Produkcja i przemysł</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6h15l-1.5 9h-12L6 6Z"/><path d="M6 6 5 3H2"/><circle cx="9" cy="20" r="1.3"/><circle cx="18" cy="20" r="1.3"/></svg>Handel i e-commerce</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/></svg>Usługi profesjonalne i doradztwo</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>Finanse i księgowość</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7h11v10H2zM13 11h5l3 3v3h-8"/><circle cx="6" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg>Logistyka i transport</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V10M19 21V10M9 21V10M15 21V10M2 10l10-6 10 6H2Z"/></svg>Sektor publiczny</li>
+        </ul>
       </div>
-      <ul class="industries-list">
-        <li>Produkcja i przemysł</li>
-        <li>Handel i e-commerce</li>
-        <li>Usługi profesjonalne i doradztwo</li>
-        <li>Finanse i księgowość</li>
-        <li>Logistyka i transport</li>
-        <li>Sektor publiczny</li>
-      </ul>
     </div>
   </section>
 
@@ -359,54 +418,50 @@
   <section class="section section--about" id="o-nas">
     <div class="container">
       <div class="about-inner">
-        <div>
+        <div class="about-copy">
           <p class="eyebrow">O nas</p>
-          <h2>Zespół specjalistów Microsoft 365, chmury i cyberbezpieczeństwa</h2>
+          <h2>Ludzie, którzy lubią, kiedy IT po prostu działa</h2>
           <p>
-            Jesteśmy zespołem specjalistów w zakresie Microsoft 365, infrastruktury chmurowej i
-            cyberbezpieczeństwa. Pomagamy firmom skonfigurować polityki bezpieczeństwa, wdrożyć MFA,
-            zabezpieczyć e-mail, Teams, SharePoint i OneDrive oraz zautomatyzować procesy ochrony danych.
+            Jesteśmy zespołem specjalistów Microsoft 365, infrastruktury chmurowej i
+            cyberbezpieczeństwa. Konfigurujemy polityki bezpieczeństwa, wdrażamy MFA, zabezpieczamy
+            pocztę, Teams, SharePoint i OneDrive oraz automatyzujemy ochronę danych.
           </p>
           <p>
-            Dziś idziemy o krok dalej — projektujemy i utrzymujemy całą infrastrukturę IT naszych klientów
-            w chmurze, wspieramy ich w rozwoju biznesu oraz wdrażamy rozwiązania automatyzacji i sztucznej
-            inteligencji. Działamy zdalnie, skutecznie i niezawodnie.
+            Dziś idziemy krok dalej: projektujemy i utrzymujemy całą infrastrukturę IT naszych
+            klientów w chmurze, wspieramy ich rozwój oraz wdrażamy automatyzację i sztuczną
+            inteligencję. Zdalnie, skutecznie i niezawodnie.
           </p>
           <div class="about-badges">
             <span>RSM365 sp. z o.o.</span>
             <span>NIP 5243037980</span>
           </div>
         </div>
-        <div class="about-visual" aria-hidden="true">
-          <div class="about-visual__ring"></div>
-          <div class="about-visual__ring about-visual__ring--2"></div>
-        </div>
-      </div>
 
-      <div class="history-card">
-        <span class="history-quote-mark" aria-hidden="true">&ldquo;</span>
-        <p class="eyebrow">Krótka historia</p>
-        <p class="history-text">
-          Zaczęło się niewinnie: klient zapytał, czy da się skonfigurować MFA tak, żeby nikt już
-          nigdy nie musiał dzwonić z pytaniem „czemu nie mogę się zalogować?”. Udało się. Potem
-          pojawił się kolejny klient, kolejna skrzynka pocztowa do zabezpieczenia i kolejna noc
-          spędzona nad politykami Zero Trust zamiast serialem. Dziś, sporo wypitej kawy później,
-          RSM365 to zespół, który zamienił obsesję na punkcie bezpieczeństwa Microsoft 365 w
-          kompleksową opiekę nad całą infrastrukturą IT — w chmurze, bez przestojów i (najczęściej)
-          bez nerwów. Telefony nadal odbieramy. Tyle że teraz już wiemy, co odpowiedzieć.
-        </p>
+        <figure class="history-card tilt">
+          <span class="history-quote-mark" aria-hidden="true">&ldquo;</span>
+          <figcaption class="eyebrow">Krótka historia</figcaption>
+          <p class="history-text">
+            Zaczęło się niewinnie: klient zapytał, czy da się skonfigurować MFA tak, żeby nikt już
+            nigdy nie dzwonił z pytaniem „czemu nie mogę się zalogować?”. Udało się. Potem przyszedł
+            kolejny klient, kolejna skrzynka do zabezpieczenia i kolejna noc nad politykami Zero Trust
+            zamiast serialu. Dziś, sporo kawy później, RSM365 to zespół, który zamienił obsesję na
+            punkcie bezpieczeństwa Microsoft 365 w kompleksową opiekę nad całym IT — w chmurze, bez
+            przestojów i (najczęściej) bez nerwów. Telefony nadal odbieramy. Tyle że teraz już wiemy,
+            co odpowiedzieć.
+          </p>
+        </figure>
       </div>
 
       <div class="team-grid">
-        <article class="team-card">
-          <img src="img/team/tomasz.png" alt="Tomasz Thiede — RSM365" class="team-photo" loading="lazy">
+        <article class="team-card tilt">
+          <div class="team-photo-wrap"><img src="img/team/tomasz.jpg" alt="Tomasz Thiede" class="team-photo" width="240" height="240" loading="lazy"></div>
           <h3>Tomasz Thiede</h3>
           <p class="team-role">Zespół RSM365</p>
           <p class="team-quote">„Pokaż ludziom problem i rozwiązanie, a zaczną działać” <span>— jak mawiał Bill Gates</span></p>
           <a href="mailto:tomasz.thiede@rsm365.eu" class="team-email">tomasz.thiede@rsm365.eu</a>
         </article>
-        <article class="team-card">
-          <img src="img/team/agnieszka.png" alt="Agnieszka Polska — RSM365" class="team-photo" loading="lazy">
+        <article class="team-card tilt">
+          <div class="team-photo-wrap"><img src="img/team/agnieszka.jpg" alt="Agnieszka Polska" class="team-photo" width="240" height="240" loading="lazy"></div>
           <h3>Agnieszka Polska</h3>
           <p class="team-role">Zespół RSM365</p>
           <p class="team-quote">„Tworzenie wartości dla innych nadaje sens pracy” <span>— jak mówi Muhammad Yunus</span></p>
@@ -417,22 +472,25 @@
   </section>
 
   <!-- ===== KONTAKT / BOOKING ===== -->
-  <section class="section section--dark" id="kontakt">
+  <section class="section section--dark section--contact" id="kontakt">
+    <div class="contact-glow" aria-hidden="true"></div>
     <div class="container kontakt-inner">
       <div class="kontakt-copy">
         <p class="eyebrow eyebrow--on-dark">Porozmawiajmy</p>
         <h2>Umów bezpłatną rozmowę telefoniczną</h2>
         <p class="section-lead section-lead--on-dark">
-          Podaj swój numer telefonu oraz wybierz dogodny termin — oddzwonimy dokładnie wtedy, kiedy
-          Ci pasuje. Rozmowa nie zobowiązuje do niczego.
+          Podaj numer telefonu i wybierz termin — zadzwonimy dokładnie wtedy, kiedy Ci pasuje.
+          Rozmowa do niczego nie zobowiązuje.
         </p>
-        <ul class="kontakt-points">
-          <li>Bez zobowiązań, bez czekania w kolejce</li>
-          <li>Rozmawiasz od razu ze specjalistą, nie z konsultantem sprzedaży</li>
-          <li>Dostępność: pon.–pt., 9:00–17:00</li>
-        </ul>
+
+        <ol class="contact-steps">
+          <li><span>1</span><div><strong>Wybierasz termin</strong>Dzień i godzina, które Ci pasują (pon.–pt., 9:00–17:00).</div></li>
+          <li><span>2</span><div><strong>Dzwonimy punktualnie</strong>Rozmawiasz od razu ze specjalistą, a nie z działem sprzedaży.</div></li>
+          <li><span>3</span><div><strong>Dostajesz konkretne wnioski</strong>Wiesz, co warto poprawić w IT i od czego zacząć.</div></li>
+        </ol>
+
         <div class="kontakt-direct">
-          <p><strong>lub napisz bezpośrednio:</strong></p>
+          <p><strong>Wolisz napisać?</strong></p>
           <p><a href="mailto:kontakt@rsm365.eu">kontakt@rsm365.eu</a></p>
         </div>
       </div>
@@ -444,6 +502,8 @@
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_next" value="dziekujemy.html">
         <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+        <p class="form-title">Zarezerwuj termin rozmowy</p>
 
         <div class="form-row">
           <label for="f-name">Imię i nazwisko *</label>
@@ -509,9 +569,8 @@
 <footer class="site-footer">
   <div class="container footer-inner">
     <div class="footer-brand">
-      <a href="#top" class="logo logo--footer">
-        <img src="img/logo-icon.png" alt="" class="logo-icon" aria-hidden="true">
-        <span>RSM<em>365</em></span>
+      <a href="#top" class="logo logo--footer" aria-label="RSM365 — do góry strony">
+        <img src="img/logo-horizontal-white.png" alt="RSM365" class="logo-img" width="132" height="44" loading="lazy">
       </a>
       <p>Zarządzana infrastruktura IT w chmurze oraz bezpieczeństwo Microsoft 365. Bez komplikacji, bez ryzyka.</p>
     </div>

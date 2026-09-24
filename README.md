@@ -6,12 +6,29 @@ budowania**. Wystarczy wgrać pliki na dowolny hosting statyczny (cPanel, GitHub
 ## Struktura plików
 
 ```
-index.html         — strona główna (wszystkie sekcje)
-dziekujemy.html     — strona podziękowania po wysłaniu formularza
-css/style.css       — wszystkie style (kolory jako zmienne CSS w :root)
-js/main.js          — nawigacja mobilna, scroll-reveal, sloty godzinowe, animacja 3D w hero
-img/favicon.svg     — favicon
+index.html                     — strona główna (wszystkie sekcje)
+dziekujemy.html                — strona podziękowania po wysłaniu formularza
+css/style.css                  — wszystkie style (kolory jako zmienne CSS w :root)
+js/main.js                     — menu, pasek postępu, scroll-reveal, liczniki, efekt 3D tilt,
+                                 oś procesu, sloty godzinowe formularza, kula 3D w hero
+img/logo-horizontal.png        — logo poziome (nagłówek, jasne tło)
+img/logo-horizontal-white.png  — logo poziome z białym napisem (stopka, ciemne tło)
+img/logo-icon.png, favicon.png — sama ikona / favicon
+img/team/*.jpg                 — zdjęcia zespołu
 ```
+
+## Animacje i efekty 3D (wersja 2)
+
+- **Hero** — szklana kula-sieć 3D (Three.js z CDN): punkty i połączenia w kolorach marki,
+  efekt szkła (Fresnel), dwie orbity z satelitami i impulsy danych biegnące po sieci.
+  Delikatnie reaguje na ruch myszy, zatrzymuje się, gdy nie jest widoczna. Bez WebGL/CDN
+  wyświetla się statyczna kula CSS.
+- **Karty** — subtelne przechylenie 3D (max 6°) i poświata pod kursorem; tylko na urządzeniach
+  z myszą.
+- **Przewijanie** — kaskadowe pojawianie się elementów, pasek postępu u góry, oś procesu
+  wypełniająca się podczas przewijania, liczniki w statystykach hero.
+- **Tło sekcji bezpieczeństwa** — przesuwająca się siatka w perspektywie 3D.
+- Wszystko wyłącza się automatycznie przy systemowym ustawieniu „ogranicz ruch”.
 
 ## ⚠️ Wymagany jednorazowy krok: aktywacja formularza (FormSubmit.co)
 
@@ -44,8 +61,6 @@ darmowego klucza dostępu wklejonego jako ukryte pole `access_key`.
   adresu/numeru, podmień we wszystkich miejscach (wyszukaj `kontakt@rsm365.eu` w `index.html`).
 - Prawdziwe dane liczbowe w sekcji hero (24/7, <15 min, 100%) — obecnie to wartości docelowe/
   orientacyjne, opisane gwiazdką jako indywidualnie ustalane w SLA.
-- Favicon (`img/favicon.svg`) — obecnie prosty monogram „R” w kolorach marki; można podmienić na
-  właściwe logo.
 
 ## Kolory i identyfikacja wizualna
 
